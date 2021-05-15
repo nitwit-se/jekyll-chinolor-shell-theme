@@ -1,5 +1,6 @@
 {%- assign page_paths = site.header_pages | default: default_paths -%}
 
+{% if site.hide_footer == true %}
 <header>
   <div class="menu">
     <ul>
@@ -13,3 +14,4 @@
     </ul>
   </div>
 </header>
+{% endif %}
